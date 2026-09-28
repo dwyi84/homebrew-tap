@@ -8,6 +8,7 @@ A featherweight macOS menu bar utility that keeps your Mac awake with a single `
 
 ```bash
 brew tap dwyi84/tap
+brew trust dwyi84/tap
 brew install --cask nightowl
 ```
 
