@@ -2,8 +2,7 @@ cask "nightowl" do
   version "0.6.1"
   sha256 "eeeddb6b1a609cddba0853621f23ff673884ce583822d21478c862d798f6afa9"
 
-  url "https://github.com/dwyi84/NightOwl/releases/download/v#{version}/NightOwl-#{version}.zip",
-      verified: "github.com/dwyi84/NightOwl/"
+  url "https://github.com/dwyi84/NightOwl/releases/download/v#{version}/NightOwl-#{version}.zip"
   name "NightOwl"
   desc "Menu bar utility that prevents idle sleep"
   homepage "https://github.com/dwyi84/NightOwl"
