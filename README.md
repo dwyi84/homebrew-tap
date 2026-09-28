@@ -29,6 +29,33 @@ brew uninstall --zap --cask nightowl   # also remove preferences
 
 NightOwl is Apple Silicon only and requires macOS 14 (Sonoma) or later.
 
+## CopyNinja
+
+A featherweight macOS menu bar clipboard manager with search, quick slots, and on-device image OCR.
+
+```bash
+brew tap dwyi84/tap
+brew trust dwyi84/tap
+brew install --cask copyninja
+```
+
+CopyNinja installs to `~/Applications/CopyNinja.app`. Because it is signed ad-hoc
+rather than notarized by Apple, Gatekeeper blocks the first launch — right-click
+the app and choose **Open**, or clear the quarantine flag:
+
+```bash
+xattr -dr com.apple.quarantine "$HOME/Applications/CopyNinja.app"
+```
+
+### Uninstall
+
+```bash
+brew uninstall --cask copyninja
+brew uninstall --zap --cask copyninja   # also remove preferences and history
+```
+
+CopyNinja is Apple Silicon only and requires macOS 14 (Sonoma) or later.
+
 ## LookHere
 
 A featherweight macOS menu bar utility that draws a smooth halo ring around your mouse cursor.
