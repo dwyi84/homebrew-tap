@@ -1,6 +1,6 @@
 cask "aiusages" do
-  version "0.1.0"
-  sha256 "1b2fc3ce0ad8485bf453e784e1f58c4346dad5852233005d09a70d6301d2eec2"
+  version "0.1.1"
+  sha256 "421e4ff7c116369350d63bc212fbf6b8d0993e25919b2bc834e8e65f75df387f"
 
   url "https://github.com/dwyi84/usages/releases/download/v#{version}/AIUsages-#{version}.zip"
   name "AI Usages"
@@ -14,7 +14,7 @@ cask "aiusages" do
 
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "AI Usages.app", target: "/Applications/AI Usages.app"
 
@@ -22,4 +22,11 @@ cask "aiusages" do
     "~/Library/Preferences/com.melissasoft.aiusages.plist",
     "~/Library/Caches/com.melissasoft.aiusages",
   ]
+
+  caveats <<~EOS
+    AI Usages is signed with an ad-hoc certificate and is not notarized by Apple,
+    so Gatekeeper may block the first launch. Right-click AI Usages.app and choose
+    "Open", or run:
+      xattr -dr com.apple.quarantine "/Applications/AI Usages.app"
+  EOS
 end
