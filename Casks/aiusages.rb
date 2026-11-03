@@ -1,6 +1,6 @@
 cask "aiusages" do
-  version "0.2.0"
-  sha256 "cb241df8f1ada4f266de8cec21205e6a2850ae2f64c02c800a014a8c738fd721"
+  version "0.2.1"
+  sha256 "e25f2563122b1158af9fad0e18fb498bc3b64e217091367737fdb83f64fdde7f"
 
   url "https://github.com/dwyi84/usages/releases/download/v#{version}/AIUsages-#{version}.zip"
   name "AI Usages"
