@@ -1,6 +1,6 @@
 cask "copyninja" do
-  version "0.3.1"
-  sha256 "e36ba1d53d90ce0a9259523b2975c4f95b04cabd9c156731c1ff10c9e2495f37"
+  version "0.3.2"
+  sha256 "68155121a4c64f33fb24e2ef1a126793607d50b42e50dc0b87699b2a0d1c7819"
 
   url "https://github.com/dwyi84/CopyNinja/releases/download/v#{version}/CopyNinja-#{version}.zip"
   name "CopyNinja"
